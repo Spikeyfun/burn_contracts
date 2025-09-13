@@ -1,0 +1,39 @@
+[package]
+name = "automation"
+version = "1.0.0"
+authors = []
+
+[addresses]
+forgelp = "0x749f81a33f9351f929dd4bc3aa482c9b83f71f6bb59d23bfc8c8b817e391a7aa"
+razor_libs = "0x6e3e09ab7fd0145d7befc0c68d6944ddc1a90fd45b8a6d28c76d8c48bed676b0"
+supETH_ADDR = "0xf90b4b9d4a9d87c39fb3140513e52edc3ead5eaddcb9881b02becdeb63c5793d"
+BURN_ADDR = "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
+supUSDC_ADDR = "0xf90b4b9d4a9d87c39fb3140513e52edc3ead5eaddcb9881b02becdeb63c5793d"
+
+[dev-addresses]
+
+[dependencies.SupraFramework]
+git = "https://github.com/Entropy-Foundation/aptos-core.git"
+rev = "dev"
+subdir = "aptos-move/framework/supra-framework"
+
+[dependencies.amm]
+git = "https://github.com/Spikeyfun/spike_interfaces.git"
+rev = "main"
+subdir = "amm"
+
+[dependencies.AptosTokenObjects]
+git = "https://github.com/Entropy-Foundation/aptos-core.git"
+rev = "dev"
+subdir = "aptos-move/framework/aptos-token-objects"
+
+[dependencies.RazorLibs]
+git = "https://github.com/spikeyfun/razor-libs.git"
+rev = "main"
+
+[dependencies.core]
+git = "https://github.com/Entropy-Foundation/dora-interface"
+rev = "master"
+subdir = "supra/mainnet/core"
+
+[dev-dependencies]
